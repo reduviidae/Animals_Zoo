@@ -17,13 +17,13 @@ class Zoo
     @name
   end
 
-  def all
+  def self.all
     @@zoo_name
   end
 
   def animal_species
-    Animal.all
-    binding.pry
+    species = Animal.all.map { |animal| animal.species }
+    species.uniq
   end
 
 end
