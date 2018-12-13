@@ -14,11 +14,12 @@ class Animal
     @@animal_list << self
   end
 
-  def all # should return an array of all the animal instances
+  def self.all # should return an array of all the animal instances
     @@animal_list
   end
 
 end
 
-lion = Animal.new("feline", 1000, "Simba")
-lion.all
+
+
+# binding.pry

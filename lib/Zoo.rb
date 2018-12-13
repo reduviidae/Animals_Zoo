@@ -1,9 +1,12 @@
-require 'pry'
+require "pry"
 
 class Zoo
+  @@zoo_name = []
+
   def initialize(name, location)
     @name = name
     @location = location
+    @@zoo_name << self
   end
 
   def location
@@ -14,10 +17,13 @@ class Zoo
     @name
   end
 
-  @@name = []
-
   def all
-    @@name
+    @@zoo_name
+  end
+
+  def animal_species
+    Animal.all
+    binding.pry
   end
 
 end

@@ -4,6 +4,12 @@ require 'pry'
 
 
 #Test your code here
+lion = Animal.new("feline", 1000, "Simba")
+rat = Animal.new("rodent", 10, "Ratty")
+dog = Animal.new("canine", 30, "Doggo")
+# lion.all
+banana = Zoo.new("central park", "NYC")
+banana.animal_species
 
 
 binding.pry
