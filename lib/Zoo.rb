@@ -22,8 +22,8 @@ class Zoo
   end
 
   def animal_species
-    Animal.all
-    binding.pry
+    species = Animal.all.map { |animal| animal.species }
+    species.uniq
   end
 
 end
