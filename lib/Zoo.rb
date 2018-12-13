@@ -17,7 +17,7 @@ class Zoo
     @name
   end
 
-  def all
+  def self.all
     @@zoo_name
   end
 
