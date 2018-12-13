@@ -1,3 +1,5 @@
+require 'pry'
+
 class Zoo
   def initialize(name, location)
     @name = name
