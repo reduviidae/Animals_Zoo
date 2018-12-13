@@ -18,6 +18,11 @@ class Animal
     @@animal_list
   end
 
+  def zoo
+    Zoo.all.select { |zoo| zoo.animal_species.include?(self.species) }
+    binding.pry
+  end
+
 end
 
 
